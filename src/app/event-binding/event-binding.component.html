@@ -1,0 +1,10 @@
+<p class="section-border">
+  {{ title }} <br>
+  <button type="button" class="btn btn-primary btn-margin-top" (click)="openPopup()" (mouseover)="over()" (mouseout)="out()">Save</button>
+</p>
+
+<div class="section-border">
+  <input type="text" name="textfield" value="{{ enterData }}" (change)="textChange()" />
+  <br>
+  <button type="button" class="btn btn-primary btn-margin-top">Update</button>
+</div>

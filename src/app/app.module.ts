@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TextInterpolationComponent } from './text-interpolation/text-interpolation.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextInterpolationComponent
+    TextInterpolationComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule
