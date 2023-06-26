@@ -1,0 +1,19 @@
+.success {
+  color: green;
+}
+
+.errorClass {
+  color: red;
+}
+
+.successClass {
+  color: #0d3cc0;
+}
+
+.textbox-height {
+  height: 60px;
+}
+
+.textBox-width {
+  width: 80%;
+}
