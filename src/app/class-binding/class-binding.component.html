@@ -1,0 +1,10 @@
+<div>
+  <!-- <input type="text" name="name" [class]="myClasses" /> -->
+
+  <!-- using only one class for styling -->
+  <!-- <input type="text" name="name" [class.successClass]="success" /> -->
+  <!-- <input type="text" name="name" [class.errorClass]="error" /> -->
+
+  <!-- can use Two Class Property in newer versions of Angular. Was not possible in previous versions of Angular -->
+  <input type="text" name="name" [class.successClass]="success" class="textBox-width" />
+</div>
