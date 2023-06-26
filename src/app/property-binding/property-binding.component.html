@@ -1,0 +1,9 @@
+<div class="section-border">
+  <h3>{{ title }}</h3> 
+  <br>
+  <input type="text" name="text" value="{{ textInput }}" (change)="inputText()">
+  <br>
+  <button type="button" class="btn btn-primary btn-margin-top" (click)="dataDisplay()" [disabled]="isDisabled">Update</button>
+  <br>
+  <p>{{ textInput }}</p>
+</div>
