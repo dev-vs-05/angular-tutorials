@@ -6,6 +6,7 @@ import { TextInterpolationComponent } from './text-interpolation/text-interpolat
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
     TextInterpolationComponent,
     EventBindingComponent,
     PropertyBindingComponent,
-    ClassBindingComponent
+    ClassBindingComponent,
+    AttributeBindingComponent
   ],
   imports: [
     BrowserModule
