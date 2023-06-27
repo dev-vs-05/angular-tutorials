@@ -8,6 +8,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
+import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TemplateReferenceVariableComponent } from './template-reference-variabl
     PropertyBindingComponent,
     ClassBindingComponent,
     AttributeBindingComponent,
-    TemplateReferenceVariableComponent
+    TemplateReferenceVariableComponent,
+    NgIfDirectiveComponent
   ],
   imports: [
     BrowserModule
