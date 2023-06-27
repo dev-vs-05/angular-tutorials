@@ -1,0 +1,39 @@
+<div class="section-border">
+  <ul>
+    <li *ngFor="let emp of employees">{{ emp }}</li>
+  </ul>
+</div>
+
+<div class="section-border" [style.margin-top.px]="15">
+  <table class="table-padding" border="1px solid brown">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Designation</th>
+        <th>Country</th>
+        <th>isFirst</th>
+        <th>isLast</th>
+        <th>isEven</th>
+        <th>isOdd</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empObj of employeeObject; index as i; first as f; last as l; even as e; odd as o;  trackBy: refreshData">
+        <td>{{ i }}</td>
+        <td>{{ empObj.name }}</td>
+        <td>{{ empObj.salary }}</td>
+        <td>{{ empObj.designation }}</td>
+        <td>{{ empObj.country }}</td>
+        <td>{{ f }}</td>
+        <td>{{ l }}</td>
+        <td>{{ e }}</td>
+        <td>{{ o }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" [style.nargin-top.px]="12" (click)="refresh()">Refresh Data</button>
+</div>
+
