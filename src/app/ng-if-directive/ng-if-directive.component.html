@@ -1,0 +1,28 @@
+<!-- We cannot use multiple if's so using else. Template literals are not applicable on html elements, use ngTemplate -->
+<div class="section-border">
+  <ul *ngIf="show; else noRecord">
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Grapes</li>
+  </ul>
+
+  <ng-template #noRecord>
+    <p>No records found</p>
+  </ng-template>
+</div>
+
+<!-- another way to use ngIf -->
+<!-- <div class="section-border" *ngIf="show; then record else noRecord">
+</div>
+
+<ng-template #record>
+  <ul>
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Grapes</li>
+  </ul>
+</ng-template>
+
+<ng-template #noRecord>
+  <p>No records found</p>
+</ng-template> -->
