@@ -10,6 +10,7 @@ import { AttributeBindingComponent } from './attribute-binding/attribute-binding
 import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.component';
+import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.com
     AttributeBindingComponent,
     TemplateReferenceVariableComponent,
     NgIfDirectiveComponent,
-    NgForDirectiveComponent
+    NgForDirectiveComponent,
+    NgSwitchDirectiveComponent
   ],
   imports: [
     BrowserModule
